@@ -1,0 +1,12 @@
+[workspace]
+authors = ["Tong <t1871038859@gmail.com>"]
+channels = ["conda-forge"]
+name = "blogui"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+nodejs = ">=22.13.0,<22.14"
+pnpm = ">=10.11.0,<11"
