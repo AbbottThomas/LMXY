@@ -1,0 +1,15 @@
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - SELECT DATABASE()
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - SELECT @@sql_mode
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - SELECT @@lower_case_table_names
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:2698 - BEGIN (implicit)
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - SELECT user.id, user.username, user.email, user.password 
+FROM user 
+WHERE user.username = %s OR user.email = %s
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - [generated in 0.00046s] ('杨凤兰', 'xlee@example.net')
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - INSERT INTO user (username, email, password) VALUES (%s, %s, %s)
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:1842 - [generated in 0.00037s] ('杨凤兰', 'xlee@example.net', '79%3Ak4')
+2025-06-04 16:38:00 [INFO] sqlalchemy.engine.Engine:2704 - COMMIT
+2025-06-04 16:38:00 [INFO] httpx:1025 - HTTP Request: POST http://testserver/users/register "HTTP/1.1 200 OK"

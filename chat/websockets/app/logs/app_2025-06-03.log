@@ -1,0 +1,38 @@
+2025-06-03 16:55:58 [INFO] uvicorn.error: Started server process [18740]
+2025-06-03 16:55:58 [INFO] uvicorn.error: Waiting for application startup.
+2025-06-03 16:55:58 [INFO] uvicorn.error: Application startup complete.
+2025-06-03 17:00:25 [INFO] uvicorn.error: Shutting down
+2025-06-03 17:00:25 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-06-03 17:00:25 [INFO] uvicorn.error: Application shutdown complete.
+2025-06-03 17:00:25 [INFO] uvicorn.error: Finished server process [18740]
+2025-06-03 17:00:26 [INFO] uvicorn.error: Started server process [16360]
+2025-06-03 17:00:26 [INFO] uvicorn.error: Waiting for application startup.
+2025-06-03 17:00:27 [INFO] uvicorn.error: Application startup complete.
+2025-06-03 17:00:48 [INFO] uvicorn.error: Shutting down
+2025-06-03 17:00:48 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-06-03 17:00:48 [INFO] uvicorn.error: Application shutdown complete.
+2025-06-03 17:00:48 [INFO] uvicorn.error: Finished server process [16360]
+2025-06-03 17:00:50 [INFO] uvicorn.error: Started server process [21264]
+2025-06-03 17:00:50 [INFO] uvicorn.error: Waiting for application startup.
+2025-06-03 17:00:50 [INFO] uvicorn.error: Application startup complete.
+2025-06-03 17:00:58 [INFO] uvicorn.error: Shutting down
+2025-06-03 17:00:58 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-06-03 17:00:58 [INFO] uvicorn.error: Application shutdown complete.
+2025-06-03 17:00:58 [INFO] uvicorn.error: Finished server process [21264]
+2025-06-03 17:01:00 [INFO] uvicorn.error: Started server process [17124]
+2025-06-03 17:01:00 [INFO] uvicorn.error: Waiting for application startup.
+2025-06-03 17:01:00 [INFO] uvicorn.error: Application startup complete.
+2025-06-03 17:07:50 [INFO] uvicorn.error: Shutting down
+2025-06-03 17:07:50 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-06-03 17:07:50 [INFO] uvicorn.error: Application shutdown complete.
+2025-06-03 17:07:50 [INFO] uvicorn.error: Finished server process [17124]
+2025-06-03 17:07:52 [INFO] uvicorn.error: Started server process [10768]
+2025-06-03 17:07:52 [INFO] uvicorn.error: Waiting for application startup.
+2025-06-03 17:07:52 [INFO] uvicorn.error: Application startup complete.
+2025-06-03 17:52:17 [INFO] uvicorn.error: Shutting down
+2025-06-03 17:52:17 [INFO] uvicorn.error: Waiting for application shutdown.
+2025-06-03 17:52:17 [INFO] uvicorn.error: Application shutdown complete.
+2025-06-03 17:52:17 [INFO] uvicorn.error: Finished server process [10768]
+2025-06-03 18:02:40 [INFO] uvicorn.access:476 - 127.0.0.1:7880 - "GET /docs HTTP/1.1" 200
+2025-06-03 18:02:41 [INFO] uvicorn.access:476 - 127.0.0.1:7880 - "GET /openapi.json HTTP/1.1" 200
+2025-06-03 18:03:02 [INFO] uvicorn.access:476 - 127.0.0.1:7879 - "POST /users/register HTTP/1.1" 500
