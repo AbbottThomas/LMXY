@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  structured:
+    format: "{'time':'%(asctime)s', 'level':'%(levelname)s', 'service':'%(name)s', 'message':'%(message)s'}"
+    datefmt: "%Y-%m-%dT%H:%M:%SZ"
+
+handlers:
+  file:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: INFO
+    filename: /var/log/app/app.log
+    when: midnight
+    backupCount: 30
+    encoding: utf-8
+    formatter: structured
+  sentry:
+    class: logging.handlers.SMTPHandler
+    level: ERROR
+    mailhost: ${SMTP_HOST}
+    fromaddr: alerts@company.com
+    toaddrs: ["ops@company.com"]
+    subject: "PROD ERROR ALERT"
+    credentials: ["${SMTP_USER}", "${SMTP_PASS}"]
+
+loggers:
+  third_party:  # 第三方库日志控制
+    level: WARNING
+    handlers: [file]
+
+root:
+  level: INFO
+  handlers: [file, sentry]

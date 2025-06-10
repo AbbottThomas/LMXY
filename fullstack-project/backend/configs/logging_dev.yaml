@@ -1,0 +1,31 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  verbose:
+    format: "%(asctime)s [%(levelname)-s] %(name)s:%(lineno)d - %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: verbose
+    stream: ext://sys.stdout
+#  开发模式，单文件日志覆盖打印
+  dev_file:
+    class: logging.FileHandler
+    level: DEBUG
+    filename: "{{LOG_PATH}}/dev_file.log"
+    mode: 'w'
+    encoding: utf-8
+    formatter: verbose
+loggers:
+  myapp:
+    level: DEBUG
+    handlers: [console,dev_file]
+    propagate: False
+
+root:
+  level: DEBUG
+  handlers: [console,dev_file]
