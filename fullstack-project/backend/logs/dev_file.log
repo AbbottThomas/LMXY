@@ -1,19 +1,19 @@
-2025-06-10 16:45:00 [INFO] app:13 - Application started
-2025-06-10 16:45:00 [INFO] uvicorn.error:83 - Started server process [6816]
-2025-06-10 16:45:00 [INFO] uvicorn.error:48 - Waiting for application startup.
-2025-06-10 16:45:00 [INFO] app:17 - 🚀 Starting application initialization
-2025-06-10 16:45:00 [INFO] databases.mysql_database:39 - Starting mysql database initialization
-2025-06-10 16:45:00 [DEBUG] aiomysql:951 - caching sha2: succeeded by fast path.
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:1842 - SELECT DATABASE()
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:1842 - SELECT @@sql_mode
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:1842 - SELECT @@lower_case_table_names
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:2698 - BEGIN (implicit)
-2025-06-10 16:45:00 [INFO] databases.mysql_database:42 - Creating mysql database tables...
-2025-06-10 16:45:00 [INFO] databases.mysql_database:44 - Tables created successfully
-2025-06-10 16:45:00 [INFO] sqlalchemy.engine.Engine:2704 - COMMIT
-2025-06-10 16:45:00 [INFO] databases.mysql_database:49 - Database initialization complete
-2025-06-10 16:45:00 [INFO] app:20 - ✅ Database initialized successfully
-2025-06-10 16:45:00 [INFO] uvicorn.error:62 - Application startup complete.
+2025-06-10 21:46:32 [INFO] app:13 - Application started
+2025-06-10 21:46:32 [INFO] uvicorn.error:83 - Started server process [12700]
+2025-06-10 21:46:32 [INFO] uvicorn.error:48 - Waiting for application startup.
+2025-06-10 21:46:32 [INFO] app:17 - 🚀 Starting application initialization
+2025-06-10 21:46:32 [INFO] databases.mysql_database:39 - Starting mysql database initialization
+2025-06-10 21:46:32 [DEBUG] aiomysql:951 - caching sha2: succeeded by fast path.
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:1842 - SELECT DATABASE()
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:1842 - SELECT @@sql_mode
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:1842 - SELECT @@lower_case_table_names
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:1842 - [raw sql] ()
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:2698 - BEGIN (implicit)
+2025-06-10 21:46:32 [INFO] databases.mysql_database:42 - Creating mysql database tables...
+2025-06-10 21:46:32 [INFO] databases.mysql_database:44 - Tables created successfully
+2025-06-10 21:46:32 [INFO] sqlalchemy.engine.Engine:2704 - COMMIT
+2025-06-10 21:46:32 [INFO] databases.mysql_database:49 - Database initialization complete
+2025-06-10 21:46:32 [INFO] app:20 - ✅ Database initialized successfully
+2025-06-10 21:46:32 [INFO] uvicorn.error:62 - Application startup complete.
