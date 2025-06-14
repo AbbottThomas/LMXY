@@ -25,7 +25,7 @@
     - 触发CD工具,  部署到服务器（Nginx,Uvicorn,Kubernetes）
     - 回滚机制
 - 运维相关
-  - ELK Stack（Elasticsearch + Logstash + Kibana）：日志收集、存储与可视化
+  - ELK Stack（Elasticsearch + Logstash + Kibana）：集群日志收集、存储与可视化
   - Prometheus/Grafana,用于监控和可视化应用性能
   - Velero：Kubernetes集群的备份与恢复工具
   - Wazuh：功能全面，开源免费的安全监控和入侵检测平台
