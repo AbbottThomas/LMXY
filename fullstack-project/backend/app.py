@@ -26,8 +26,8 @@ async def lifespan(app:FastAPI):
     await cleanup_db_mysql()
     logger.info("✅ Cleanup complete")
         
-
-app=FastAPI(title="LMXY API",version="0.0.2",lifespan=lifespan)
+# 生产模式下，debug=Fasle,openai_url=None
+app=FastAPI(title="LMXY API",version="0.0.2",lifespan=lifespan,debug=True,)
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,6 +1,6 @@
 from pydantic_settings import BaseSettings
 from pydantic import Field
-# from functools import lru_cache
+from functools import lru_cache
 # from dotenv import load_dotenv
 
 
@@ -25,10 +25,13 @@ class Settings(BaseSettings):
         env_file_encoding = "utf-8"
         # extra = "allow"
 
-settings = Settings()   # type: ignore
+# settings = Settings()   # type: ignore
 
-# @lru_cache
-# def get_settings():
-#     return Settings()
+# 只需在这里装饰一次,首次调用时加载配置并缓存,动态配置需谨慎处理缓存清理
+# lru_cache 是进程内缓存，多进程部署时需考虑分布式缓存（如 Redis）
+# 其他业务逻辑中直接调用 get_settings() 即可，缓存由装饰器自动管理
+@lru_cache
+def get_settings():
+    return Settings() # type: ignore
 
 

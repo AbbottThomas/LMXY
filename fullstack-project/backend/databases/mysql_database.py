@@ -1,4 +1,4 @@
-from configs.settings_config import settings
+from configs.settings_config import get_settings
 from sqlalchemy.ext.asyncio import create_async_engine,AsyncSession,async_sessionmaker
 from sqlmodel import SQLModel
 import logging
@@ -6,7 +6,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-engine = create_async_engine(settings.MYSQL_URI, echo=True)
+engine = create_async_engine(get_settings().MYSQL_URI, echo=True)
 
 async def cleanup_db():
     await engine.dispose()
